@@ -1,6 +1,5 @@
 # AWS 实验：TGW 多路由表分段 + 集中式 Network Firewall 检查 VPC
 
-> 目标：理解 SAA-C03 里两个高频网络架构
 > 1. **Transit Gateway 多路由表分段**（association / propagation）
 > 2. **集中式检查 VPC**（inspection VPC）：用路由把出网流量和 VPC 间流量"引"进 AWS Network Firewall（NF）
 >
