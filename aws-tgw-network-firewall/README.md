@@ -380,23 +380,6 @@ ping -c 3 <B 私网 IP>                                                         
 
 ---
 
-## Part 7 — SAA-C03 考点速记
-
-| 场景关键词 | 答案 |
-|---|---|
-| 部分 VPC 只能互访其中一部分 | TGW **多张路由表**：association + propagation |
-| VPC 级状态检测、IPS、按域名过滤出站、集中检查多个 VPC | **AWS Network Firewall** |
-| L7 HTTP 防护，挂在 ALB / CloudFront / API Gateway 上 | **WAF** |
-| 只过滤 DNS 查询 | **Route 53 Resolver DNS Firewall** |
-| 要用第三方防火墙设备（Palo Alto 等） | **GWLB + 第三方设备** |
-| 多个 VPC 共享 NAT 和防火墙出网 | 检查 VPC + TGW + NF + NAT |
-| 东西向（VPC 间）流量检查 | TGW 把 spoke 流量路由到检查 VPC，过完防火墙再回 TGW（发夹） |
-| 多 AZ 防火墙，来回路径不对称导致丢包 | TGW attachment 开 **Appliance mode** |
-
-不考：Suricata 规则怎么写、Strict order 与 Action order 细节、Console 向导怎么点。
-
----
-
 ## Part 8 — 清理（严格按顺序，NF 最贵最先删）
 
 1. 终止 3 台 EC2。
