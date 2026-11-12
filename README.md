@@ -2,4 +2,5 @@
 
 ## Labs
 
-- [AWS：TGW 多路由表分段 + 集中式 Network Firewall 检查 VPC](aws-tgw-network-firewall/README.md)
+- 
+- 很多年前在公司就听说过 「单臂路由」，「npath」非对称路径等概念，一直也没有搞明白，因为网络设备那能让动，现在aws上面这个实验倒是帮明白了不少
